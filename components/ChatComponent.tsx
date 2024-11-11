@@ -49,7 +49,7 @@ export default function ChatComponent() {
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
-      // En caso de error, agregamos un mensaje de error como respuesta
+      console.error("Error en la solicitud:", error);
       const errorMessage: Message = {
         role: "model",
         content:
