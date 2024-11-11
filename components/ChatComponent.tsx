@@ -120,7 +120,7 @@ export default function ChatComponent() {
         <div className="space-y-4">
           <div className="relative">
             <Textarea
-              placeholder="¿Qué te gustaría preguntar? (Enter para enviar, Shift + Enter para nueva línea)"
+              placeholder="Dile al Recomendador de Celulares con IA tus preferencias y presupuesto!"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               onKeyDown={handleKeyDown}
