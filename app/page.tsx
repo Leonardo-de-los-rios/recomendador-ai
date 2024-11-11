@@ -27,6 +27,7 @@ export default function ChatComponent() {
       const data = await res.json();
       setResponse(data.message);
     } catch (error) {
+      console.error("Error en la solicitud:", error);
       setResponse("Error al procesar tu solicitud");
     } finally {
       setIsLoading(false);

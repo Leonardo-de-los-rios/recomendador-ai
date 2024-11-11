@@ -12,6 +12,7 @@ export async function POST(req: Request) {
     const text = response.text();
     return NextResponse.json({ message: text });
   } catch (error) {
+    console.error("Error en la solicitud:", error);
     return NextResponse.json(
       { error: "Error procesando la solicitud" },
       { status: 500 }
