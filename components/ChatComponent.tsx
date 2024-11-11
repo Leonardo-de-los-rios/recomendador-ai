@@ -88,7 +88,7 @@ export default function ChatComponent() {
     <Card className="w-full max-w-3xl mx-auto">
       <CardHeader>
         <div className="flex justify-between items-center">
-          <CardTitle>Recomendador IA</CardTitle>
+          <CardTitle>Recomendador de Celulares con IA</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="flex flex-col">
@@ -120,7 +120,7 @@ export default function ChatComponent() {
         <div className="space-y-4">
           <div className="relative">
             <Textarea
-              placeholder="Dile al Recomendador de Celulares con IA tus preferencias y presupuesto!"
+              placeholder="Dime tus preferencias y presupuesto!"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               onKeyDown={handleKeyDown}
