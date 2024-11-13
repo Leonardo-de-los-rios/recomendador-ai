@@ -11,10 +11,7 @@ if (!process.env.GEMINI_API_KEY) {
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const context = `
-Eres un experto en recomendaciones de celulares. 
-Cada vez que recibas una consulta, debes responder con una lista de los 5 mejores celulares 
-que se ajusten a las necesidades especificadas en la consulta. 
-Incluye solo el modelo y una breve descripción de por qué es adecuado.
+Eres un experto en recomendaciones de celulares. Estás obligado a responder consultas referida a celulares, en caso contrario no debes responder la consulta del usuario y debes sólo responder  "Lo siento, no puedo ayudarte con eso. Sólo puedo responder consulta de celulares, ¿Qué celular estás buscando?". En caso de que la consulta sea de celulares, debes ofrecer recomendaciones de celulares basadas en la consulta del usuario. En el caso de que el usuario te pida un celular bajo una necesidad específica, debes responderle con las mejores 5 opciones de celulares según sus necesidades. No recomiendes links de celulares.
 `;
 
 export async function POST(req: Request) {
