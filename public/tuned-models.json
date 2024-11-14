@@ -1,0 +1,44 @@
+{
+  "models": [
+    {
+      "id": "tunedModels/smartphones-xrjir1ho6s6g",
+      "baseModel": "Gemini 1.5 Flash 001 Tuning",
+      "trainingTime": "6m 6s",
+      "optimizedExamples": 106,
+      "epochs": 5,
+      "batchSize": 4,
+      "learningRate": 0.001,
+      "createdAt": "2024-02-15T10:30:00Z"
+    },
+    {
+      "id": "tunedModels/smartphonesv2-yxq6u1pzn0q1",
+      "baseModel": "Gemini 1.0 Pro 001 (Tuning)",
+      "trainingTime": "1m 11s",
+      "optimizedExamples": 57,
+      "epochs": 2,
+      "batchSize": 4,
+      "learningRate": 0.001,
+      "createdAt": "2024-02-16T14:45:00Z"
+    },
+    {
+      "id": "tunedModels/smartphonesv3-c1tbmvftfdi3",
+      "baseModel": "Gemini 1.0 Pro 001 (Tuning)",
+      "trainingTime": "2m 29s",
+      "optimizedExamples": 78,
+      "epochs": 6,
+      "batchSize": 4,
+      "learningRate": 0.001,
+      "createdAt": "2024-02-17T09:15:00Z"
+    },
+    {
+      "id": "tunedModels/smartphonesv4-n7q1nczw35jf",
+      "baseModel": "Gemini 1.0 Pro 001",
+      "trainingTime": "8m 12s",
+      "optimizedExamples": 78,
+      "epochs": 10,
+      "batchSize": 4,
+      "learningRate": 0.001,
+      "createdAt": "2024-02-18T16:20:00Z"
+    }
+  ]
+}
