@@ -63,7 +63,7 @@ export default function ChatComponent() {
 
     setIsLoading(true);
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch("/api/gemini-chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
